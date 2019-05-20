@@ -200,16 +200,19 @@ ul li {
 
 .home-img {
 	width: 100%;
-	height: 650px;
-	background-image: url(../images/loyola.jpeg);
+	height: 1000px;
+	background-image: url(../images/skyline.jpeg);
 	background-size: 100%;
+	background-position: center
 }
 
 .home-img:hover {
 	width: 100%;
-	height: 858px;
-	background-image: url(../images/loyola.jpeg);
+	height: 1000px;
+	background-image: url(../images/skyline.jpeg);
 	background-size: 100%;
+	background-position: center
+
 }
 
 
