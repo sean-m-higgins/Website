@@ -144,7 +144,6 @@ body {
 }
 
 .home {
-
 }
 
 .navbar {
@@ -167,7 +166,7 @@ ul {
 }
 
 .menu {
-	
+
 	color: white;
 }
 
@@ -225,5 +224,55 @@ ul li {
 
 }
 
+.portfolio {
+	position: center;
+}
+
+.carousel {
+	height: 500px;
+	width: 500px;
+}
+
+.carousel-indicators {
+
+}
+
+.carousel-inner {
+	height: 500px;
+	width: 500px;
+}
+
+.carousel-item {
+
+}
+
+.carousel-img {
+	height: 500px;
+	width: 500px;
+}
+
+.carousel-control-prev {
+
+}
+
+.carousel-control-next {
+
+}
+
+.carousel-control-prev-icon {
+
+}
+
+.carousel-control-next-icon {
+
+}
+
+.carousel-caption {
+
+}
+
+.slide {
+
+}
 
 
