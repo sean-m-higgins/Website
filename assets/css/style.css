@@ -163,11 +163,11 @@ body {
 
 /* move arount entire navigation in website */
 ul {
-
+	position: center;
 }
 
 .menu {
-	position: center;
+	
 	color: white;
 }
 
