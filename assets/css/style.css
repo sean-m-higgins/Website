@@ -131,8 +131,16 @@ input, select {
 *
 *
 */
+@font-face {
+	font-family: SanFrancisco;
+	src: url(../fonts/SF-Pro-Display-Ultralight.otf) format("opentype");
+	font-weight: normal;
+	font-size: normal;
+}
+
 body {
 	background: #6BCBFF;
+	color: white;
 }
 
 .home {
@@ -140,10 +148,17 @@ body {
 }
 
 .navbar {
-	font-family: "Apple Symbols", "Times New Roman";
+	font-family: SanFrancisco;
 	width: 100%;
 	height: 50px;
 	background: black;
+}
+
+.navbar-brand {
+	display: block;
+	margin-left: 20px; 
+	color: white;
+	/* opacity is last value --> color: rgba(77, 0, 255, 0.5); */
 }
 
 /* move arount entire navigation in website */
@@ -151,30 +166,20 @@ ul {
 
 }
 
-.name {
-	display: block;
-	margin-left: 10px; 
-	font-size: 40px;
-	font-weight: 100;
-	color: white;
-	/* opacity is last value --> color: rgba(77, 0, 255, 0.5); */
-	letter-spacing: -2px;
-	line-height: 50px;
-}
-
 .menu {
-
+	position: center;
+	color: white;
 }
 
 /* move around individual links inside */
 ul li {
 	display: inline-block;
-	float: left;
-	line-height: 50px
+	line-height: 30px
 }
 
 /* style actual text in list of menu items */
 .nav-item {
+	float: right;
 	display: block;
 	text-decoration: none;
 	font-size: 20px;
@@ -193,7 +198,7 @@ ul li {
 .nav-item:hover {
 	display: block;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 20px;
 	color: #6BCBFF;
 	padding: 0 20px;
 }
@@ -215,6 +220,10 @@ ul li {
 
 }
 
+/* if the screen and has min width of 768 px, run following code */
+@media only screen and (min-width: 768px) {
+
+}
 
 
 
