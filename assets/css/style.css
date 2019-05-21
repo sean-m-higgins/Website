@@ -5,7 +5,7 @@ Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com 
 Twitter: @rich_clark
 */
-
+/*
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -58,14 +58,14 @@ a {
     background:transparent;
 }
 
-/* change colours to suit your needs */
+/* change colours to suit your needs 
 ins {
     background-color:#ff9;
     color:#000;
     text-decoration:none;
 }
 
-/* change colours to suit your needs */
+/* change colours to suit your needs 
 mark {
     background-color:#ff9;
     color:#000; 
@@ -87,7 +87,7 @@ table {
     border-spacing:0;
 }
 
-/* change border colour to suit your needs */
+/* change border colour to suit your needs 
 hr {
     display:block;
     height:1px;
@@ -99,7 +99,7 @@ hr {
 
 input, select {
     vertical-align:middle;
-}
+}*//*/*/
 /*
 *
 *
@@ -133,14 +133,13 @@ input, select {
 */
 @font-face {
 	font-family: SanFrancisco;
-	src: url(../fonts/SF-Pro-Display-Ultralight.otf) format("opentype");
+	src: url(../fonts/SF-Pro-Display-Thin.otf) format("opentype");
 	font-weight: normal;
 	font-size: normal;
 }
 
 body {
 	background: #6BCBFF;
-	color: white;
 }
 
 .home {
@@ -149,41 +148,43 @@ body {
 .navbar {
 	font-family: SanFrancisco;
 	width: 100%;
-	height: 50px;
+	height: 60px;
 	background: black;
 }
 
 .navbar-brand {
 	display: block;
 	margin-left: 20px; 
-	color: white;
+	font-size: 45px;
 	/* opacity is last value --> color: rgba(77, 0, 255, 0.5); */
 }
 
 /* move arount entire navigation in website */
-ul {
-	position: center;
+
+.nav {
+
 }
 
-.menu {
-
-	color: white;
+.navbar-nav {
+	margin: auto;
 }
 
 /* move around individual links inside */
+
 ul li {
 	display: inline-block;
 	line-height: 30px
 }
 
 /* style actual text in list of menu items */
+
 .nav-item {
 	float: right;
 	display: block;
 	text-decoration: none;
 	font-size: 20px;
 	color: white;
-	padding: 0 20px;
+	padding: 0 5px;
 }
 
 .nav-item:active{
@@ -197,7 +198,7 @@ ul li {
 .nav-item:hover {
 	display: block;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 23px;
 	color: #6BCBFF;
 	padding: 0 20px;
 }
@@ -219,18 +220,25 @@ ul li {
 
 }
 
+.btn {
+
+}
+
 /* if the screen and has min width of 768 px, run following code */
+
 @media only screen and (min-width: 768px) {
 
 }
 
 .portfolio {
-	position: center;
+
 }
 
+
+/* CAROUSEL */
+
 .carousel {
-	height: 500px;
-	width: 500px;
+	
 }
 
 .carousel-indicators {
@@ -238,8 +246,7 @@ ul li {
 }
 
 .carousel-inner {
-	height: 500px;
-	width: 500px;
+	
 }
 
 .carousel-item {
@@ -248,7 +255,7 @@ ul li {
 
 .carousel-img {
 	height: 500px;
-	width: 500px;
+	width: 100%;
 }
 
 .carousel-control-prev {
@@ -274,5 +281,5 @@ ul li {
 .slide {
 
 }
-
+/* END OF CAROUSEL */
 
