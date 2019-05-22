@@ -255,11 +255,13 @@ body {
  *
  *
  * DRAGGABLES */
+
 #drag-1 {
 	display: inline-block;
+	text-align: center;
   	width: 15%;
-  	margin-left: 25%;
-  	background-color: #29e;
+  	margin-left: 20%;
+  	background-color: #2B8EFF;
   	color: white;
   	border-radius: 0.75em;
   	padding: 2%;
@@ -271,8 +273,10 @@ body {
 
 #drag-2 {
 	display: inline-block;
+	text-align: center;
+	margin-left: .75%;
 	width: 15%;
-  	background-color: #29e;
+  	background-color: #FECC12;
   	color: white;
   	border-radius: 0.75em;
   	padding: 2%;
@@ -281,6 +285,57 @@ body {
   	-webkit-transform: translate(0px, 0px);
           	transform: translate(0px, 0px);
 }
+
+#drag-3 {
+	display: inline-block;
+	text-align: center;
+	margin-left: .75%;
+	width: 15%;
+  	background-color: #3BB63E;
+  	color: white;
+  	border-radius: 0.75em;
+  	padding: 2%;
+  	touch-action: none;
+  	user-select: none;
+  	-webkit-transform: translate(0px, 0px);
+          	transform: translate(0px, 0px);
+}
+
+#drag-4 {
+	display: inline-block;
+	text-align: center;
+	margin-left: .75%;
+	width: 15%;
+  	background-color: #E14A3A;
+  	color: white;
+  	border-radius: 0.75em;
+  	padding: 2%;
+  	touch-action: none;
+  	user-select: none;
+  	-webkit-transform: translate(0px, 0px);
+          	transform: translate(0px, 0px);
+}
+
+#drag-5 {
+	display: inline-block;
+	text-align: center;
+	margin-left: .75%;
+	width: 15%;
+  	background-color: #49B0BB;
+  	color: white;
+  	border-radius: 0.75em;
+  	padding: 2%;
+  	touch-action: none;
+  	user-select: none;
+  	-webkit-transform: translate(0px, 0px);
+          	transform: translate(0px, 0px);
+}
+
+#box-tag {
+	color: white;
+	
+}
+
 /* END OF DRAGGABLES */
 
 /*
@@ -289,24 +344,51 @@ body {
  *
  *
  * ABOUT ME */
- #about-title {
+ #titles {
  	font-family: SanFranciscoBold;
  	font-size: 30px;
  	margin-left: 5%;
  }
+
+ .jumbotron {
+ 	font-family: SanFranciscoBold;
+ 	font-size: 20px;
+ 	margin-left: 20%;
+ 	text-align: center;
+ 	opacity: 0.5;
+ }
 /* END OF ABOUT ME */
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { ... }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+/*
+ *
+ *
+ *
+ *
+ * SKILLS */
+#jtron {
+	font-family: SanFranciscoBold;
+ 	font-size: 20px;
+ 	text-align: right;
+ 	opacity: 0.5;
+}
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
+#jtron-skill {
+	font-family: SanFranciscoBold;
+ 	font-size: 25px;
+ 	text-align: right;
+ }
+/* END OF SKILLS */
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+/*
+ *
+ *
+ *
+ *
+ * PORTFOLIO */
+
+
+
 
 .portfolio {
 
@@ -360,4 +442,16 @@ body {
 
 }
 /* END OF CAROUSEL */
+/* END OF PORTFOLIO */
 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { ... }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
