@@ -11,6 +11,61 @@
 		<meta name="viewport" content="width=divice-width, initial-scale=1.0">
 		<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 		<link rel="stylesheet" href="assets/bootstrap-4/css/bootstrap.min.css">
+		<script src="assets/js/interactjs/dist/interact.js"></script>
+		<script src="assets/js/jQuery/dist/jQuery.js"></script>
+			<script type="text/javascript">
+				//from: https://interactjs.io
+				$(document).ready(function() {
+					// target elements with the "draggable" class
+					interact('.draggable')
+					  .draggable({
+					    // enable inertial throwing
+					    inertia: true,
+					    // keep the element within the area of it's parent
+					    modifiers: [
+					      interact.modifiers.restrict({
+					        restriction: "parent",
+					        endOnly: true,
+					        elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
+					      }),
+					    ],
+					    // enable autoScroll
+					    autoScroll: true,
+
+					    // call this function on every dragmove event
+					    onmove: dragMoveListener,
+					    // call this function on every dragend event
+					    onend: function (event) {
+					      var textEl = event.target.querySelector('p');
+
+					      textEl && (textEl.textContent =
+					        'moved a distance of '
+					        + (Math.sqrt(Math.pow(event.pageX - event.x0, 2) +
+					                     Math.pow(event.pageY - event.y0, 2) | 0))
+					            .toFixed(2) + 'px');
+					    }
+					  });
+
+					  function dragMoveListener (event) {
+					    var target = event.target,
+					        // keep the dragged position in the data-x/data-y attributes
+					        x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+					        y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+
+					    // translate the element
+					    target.style.webkitTransform =
+					    target.style.transform =
+					      'translate(' + x + 'px, ' + y + 'px)';
+
+					    // update the posiion attributes
+					    target.setAttribute('data-x', x);
+					    target.setAttribute('data-y', y);
+					  }
+
+					  // this is used later in the resizing and gesture demos
+					  window.dragMoveListener = dragMoveListener;
+				});
+			</script>
 	</head>
 
 	<body data-spy="scroll" data-target="#navbarResponsive">
@@ -27,13 +82,13 @@
 			      <li class="nav-item active"><button type="submit" class="btn btn-primary"><a class="nav-item" href="#home">Home <span class="sr-only">(current)</span></a></button>
 			      </li>
 			      <li class="nav-item">
-			        <button type="submit" class="btn btn-danger"><a class="nav-item" href="#portfolio">Portfolio</a></button>
-			      </li>
-			      <li class="nav-item">
 			        <button type="submit" class="btn btn-warning"><a class="nav-item" href="#about">About</a></button>
 			      </li>
 			      <li class="nav-item">
 			        <button type="submit" class="btn btn-success"><a class="nav-item" href="#skills">Skills</a></button>
+			      </li>
+			      <li class="nav-item">
+			        <button type="submit" class="btn btn-danger"><a class="nav-item" href="#portfolio">Portfolio</a></button>
 			      </li>
 			      <li class="nav-item">
 			        <button type="submit" class="btn btn-info"><a class="nav-item" href="#contact">Contact</a></button>
@@ -48,9 +103,27 @@
 					<div class="home-inner"></div>
 				</div>
 			</div>
+			<a href="#" id="drag-1" class="draggable js-drag">ddd</a>
+			<div id="drag-2" class="draggable js-drag">Drag me…</div>
+			<div id="drag-2" class="draggable js-drag">Drag me…</div>
 			<!-- END OF LANDING PAGE -->
 		</div>
 		<!-- END OF HOME -->
+		<!-- ABOUT -->
+		<div id="about">
+			<h1 id="about-title">About Me</h1>
+			<div class="row">
+				<div class="col">
+					hi
+				</div>
+			</div>
+		</div>
+		<!-- END OF ABOUT -->
+		<!-- SKILLS -->
+		<div id="skills">
+			<p>Hello</p>
+		</div>
+		<!-- END OF SKILLS -->
 		<!-- PORTFOLIO -->
 		<div id="portfolio">
 			<div id="demo" class="carousel slide" data-ride="carousel">
@@ -95,16 +168,6 @@
 			<!-- END OF CAROUSEL --> 
 		</div>
 		<!-- END OF PORTFOLIO -->
-		<!-- ABOUT -->
-		<div id="about">
-			<p>Hello</p>
-		</div>
-		<!-- END OF ABOUT -->
-		<!-- SKILLS -->
-		<div id="skills">
-			<p>Hello</p>
-		</div>
-		<!-- END OF SKILLS -->
 		<!-- CONTACT -->
 		<div id="contact">
 			<p>Hello</p>
@@ -189,6 +252,7 @@
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	    </div>
 	</body>
 	<!-- END OF BODY -->
 </html>

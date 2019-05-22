@@ -1,0 +1,41 @@
+{
+  "_from": "@interactjs/reflow@1.4.1",
+  "_id": "@interactjs/reflow@1.4.1",
+  "_inBundle": false,
+  "_integrity": "sha512-VEiYf4KROtIAhf7PGyUnKh+mGQfArrC7QImI6noa6pxbkbkFTl2sBH8qEbog2TmfLu+rKnHFARAUXA5psFAwKw==",
+  "_location": "/@interactjs/reflow",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@interactjs/reflow@1.4.1",
+    "name": "@interactjs/reflow",
+    "escapedName": "@interactjs%2freflow",
+    "scope": "@interactjs",
+    "rawSpec": "1.4.1",
+    "saveSpec": null,
+    "fetchSpec": "1.4.1"
+  },
+  "_requiredBy": [
+    "/@interactjs/types"
+  ],
+  "_resolved": "https://registry.npmjs.org/@interactjs/reflow/-/reflow-1.4.1.tgz",
+  "_shasum": "37892376e1bc6ed6ba3ba163d2f10c1dfd03e582",
+  "_spec": "@interactjs/reflow@1.4.1",
+  "_where": "/Users/SeanHiggins/node_modules/@interactjs/types",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "<h2> This package is an internal part of <a href=\"https://www.npmjs.com/package/interactjs\">interactjs</a> and is not meant to be used independently as each update may introduce breaking changes </h2>",
+  "devDependencies": {
+    "promise-polyfill": "latest"
+  },
+  "name": "@interactjs/reflow",
+  "peerDependencies": {
+    "@interactjs/core": "1.4.1",
+    "@interactjs/utils": "1.4.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.4.1"
+}
