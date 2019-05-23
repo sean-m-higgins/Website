@@ -11,8 +11,47 @@
 		<meta name="viewport" content="width=divice-width, initial-scale=1.0">
 		<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 		<link rel="stylesheet" href="assets/bootstrap-4/css/bootstrap.min.css">
-		<script src="assets/js/interactjs/dist/interact.js"></script>
 		<script src="assets/js/jQuery/dist/jQuery.js"></script>
+	</head>
+
+	<body data-spy="scroll" data-target="#navbarResponsive">
+		<!-- HOME -->
+		<div id="home">
+			<!-- NAV BAR -->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+			  <a class="navbar-brand" href="#">Sean Higgins</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+			    <ul class="navbar-nav">
+			      <li class="nav-item active"><button type="submit" class="btn btn-primary"><a class="nav-item" href="#home">Home <span class="sr-only">(current)</span></a></button>
+			      </li>
+			      <li class="nav-item">
+			        <button type="submit" class="btn btn-warning"><a class="nav-item" href="#about">About</a></button>
+			      </li>
+			      <li class="nav-item">
+			        <button type="submit" class="btn btn-success"><a class="nav-item" href="#skills">Skills</a></button>
+			      </li>
+			      <li class="nav-item">
+			        <button type="submit" class="btn btn-danger"><a class="nav-item" href="#portfolio">Portfolio</a></button>
+			      </li>
+			      <li class="nav-item">
+			        <button type="submit" class="btn btn-info"><a class="nav-item" href="#contact">Contact</a></button>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+			<!-- END OF NAV BAR -->
+			<!-- LANDING PAGE -->
+			<div class="landing">
+				<div class="home-wrap">
+					<div class="home-inner">Welcome!</div>
+				</div>
+			</div>
+			<!-- END OF LANDING PAGE -->
+			<!-- DRAGGABLES -->
+			<script src="assets/js/interactjs/dist/interact.js"></script>
 			<script type="text/javascript">
 				//from: https://interactjs.io
 				$(document).ready(function() {
@@ -66,43 +105,6 @@
 					  window.dragMoveListener = dragMoveListener;
 				});
 			</script>
-	</head>
-
-	<body data-spy="scroll" data-target="#navbarResponsive">
-		<!-- HOME -->
-		<div id="home">
-			<!-- NAV BAR -->
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
-			  <a class="navbar-brand" href="#">Sean Higgins</a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNav">
-			    <ul class="navbar-nav">
-			      <li class="nav-item active"><button type="submit" class="btn btn-primary"><a class="nav-item" href="#home">Home <span class="sr-only">(current)</span></a></button>
-			      </li>
-			      <li class="nav-item">
-			        <button type="submit" class="btn btn-warning"><a class="nav-item" href="#about">About</a></button>
-			      </li>
-			      <li class="nav-item">
-			        <button type="submit" class="btn btn-success"><a class="nav-item" href="#skills">Skills</a></button>
-			      </li>
-			      <li class="nav-item">
-			        <button type="submit" class="btn btn-danger"><a class="nav-item" href="#portfolio">Portfolio</a></button>
-			      </li>
-			      <li class="nav-item">
-			        <button type="submit" class="btn btn-info"><a class="nav-item" href="#contact">Contact</a></button>
-			      </li>
-			    </ul>
-			  </div>
-			</nav>
-			<!-- END OF NAV BAR -->
-			<!-- LANDING PAGE -->
-			<div class="landing">
-				<div class="home-wrap">
-					<div class="home-inner">Welcome!</div>
-				</div>
-			</div>
 			<div id="drag-1" class="draggable js-drag">
 				<h4><a id="box-tag" href="#box1" data-toggle="collapse">Software Engineer</a></h4>
 				<div id="box1" class="collapse in">After beginning my college career as a Mathematics major, I switched to Computer Science and never looked back! Programming comes natural to me and I find deep satisfaction with the code I create. I have experience in all major areas of computing including front-end, back-end, systems, and machine learning, and my proficient languages including example projects are listed below.</a></div>
@@ -123,7 +125,7 @@
 				<h4><a id="box-tag" href="#box5" data-toggle="collapse">Eagle Scout</a></h4>
 				<div id="box5" class="collapse in">The Eagle Scout award is my highest and most cherished achievement that I obtained before the age of 18. My Eagle Project is discussed and linked below. Active in Troop 671 for six years, participating in a wide variety of activities and learning life lessons that propelled me to where I am today.</a></div>
 			</div>
-			<!-- END OF LANDING PAGE -->
+			<!-- END OF DRAGGABLES -->
 		</div>
 		<!-- END OF HOME -->
 		<!-- ABOUT -->
