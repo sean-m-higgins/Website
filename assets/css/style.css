@@ -195,7 +195,11 @@ body {
 
 #box-tag {
 	color: white;
-	
+	font-size: 20px;
+}
+
+#box1, #box2, #box3, #box4, #box5 {
+	text-align: center;
 }
 /* END OF DRAGGABLES */
 
