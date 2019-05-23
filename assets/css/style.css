@@ -303,7 +303,7 @@ body {
 #myGithubInput, #myLinkedinInput, #myFacebookInput, 
 #myTwitterInput, #myInstagramInput, #myEmailInput{
 	opacity: .20;
-	font-size: 2px;
+	font-size: 0px;
 }
 
 #contact-button {
