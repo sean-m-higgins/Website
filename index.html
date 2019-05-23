@@ -100,10 +100,9 @@
 			<!-- LANDING PAGE -->
 			<div class="landing">
 				<div class="home-wrap">
-					<div class="home-inner"></div>
+					<div class="home-inner">Welcome!</div>
 				</div>
 			</div>
-
 			<div id="drag-1" class="draggable js-drag">
 				<h4><a id="box-tag" href="#box1" data-toggle="collapse">Column 1</a></h4>
 				<div id="box1" class="collapse in">Enumerating objects: 11, done.
@@ -221,7 +220,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-							<h4><a href="#col1Content" data-toggle="collapse">Column 1</a></h4>
+							<h4><a href="#col1Content" data-toggle="collapse">Work Experience</a></h4>
 							<div id="col1Content" class="collapse in">Enumerating objects: 11, done.
 							Counting objects: 100% (11/11), done.
 							Delta compression using up to 4 threads.
@@ -233,8 +232,20 @@
 		   					0d84fa0..b97fe6e  master -> master</div>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-							<h4><a href="#col2Content" data-toggle="collapse">Column 2</a></h4>
-							<div id="col2Content" class="collapse in">
+							<h4><a href="#col2Content" data-toggle="collapse">Education</a></h4>
+							<div id="col2Content" class="collapse in">Enumerating objects: 11, done.
+							Counting objects: 100% (11/11), done.
+							Delta compression using up to 4 threads.
+							Compressing objects: 100% (5/5), done.
+							Writing objects: 100% (6/6), 679 bytes | 679.00 KiB/s, done.
+							Total 6 (delta 3), reused 0 (delta 0)
+							remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+							To https://github.com/sean-m-higgins/Website.git
+		   					0d84fa0..b97fe6e  master -> master</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<h4><a href="#col3Content" data-toggle="collapse">Projects</a></h4>
+							<div id="col3Content" class="collapse in">
 							Enumerating objects: 11, done.
 							Counting objects: 100% (11/11), done.
 							Delta compression using up to 4 threads.
@@ -245,8 +256,8 @@
 		   					</div>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-							<h4><a href="#col3Content" data-toggle="collapse">Column 3</a></h4>
-							<div id="col3Content" class="collapse in">
+							<h4><a href="#col4Content" data-toggle="collapse">Awards</a></h4>
+							<div id="col4Content" class="collapse in">
 							Enumerating objects: 11, done.
 							Counting objects: 100% (11/11), done.
 							Delta compression using up to 4 threads.
@@ -265,11 +276,122 @@
 		<div id="contact">
 			<h1 id="titles">Contact Me</h1>
 			<div class="container-fluid">
-				<div class="jumbotron">
-					con
+				<div class="jumbotron" id="jtron-contact">
+					Please click any of the profiles below to get their link!
+					<script type="text/javascript">
+						function myGithubFunction() {
+						  /* Get the text field */
+						  var copyText = document.getElementById("myGithubInput");
+						  /* Select the text field */
+						  copyText.select();
+						  /* Copy the text inside the text field */
+						  document.execCommand("copy");
+						  /* Alert the copied text */
+						  alert("Copied the text: " + copyText.value);
+						}
+						function myLinkedinFunction() {
+						  /* Get the text field */
+						  var copyText = document.getElementById("myLinkedinInput");
+						  /* Select the text field */
+						  copyText.select();
+						  /* Copy the text inside the text field */
+						  document.execCommand("copy");
+						  /* Alert the copied text */
+						  alert("Copied the text: " + copyText.value);
+						}
+						function myFacebookFunction() {
+						  /* Get the text field */
+						  var copyText = document.getElementById("myFacebookInput");
+						  /* Select the text field */
+						  copyText.select();
+						  /* Copy the text inside the text field */
+						  document.execCommand("copy");
+						  /* Alert the copied text */
+						  alert("Copied the text: " + copyText.value);
+						}
+						function myTwitterFunction() {
+						  /* Get the text field */
+						  var copyText = document.getElementById("myTwitterInput");
+						  /* Select the text field */
+						  copyText.select();
+						  /* Copy the text inside the text field */
+						  document.execCommand("copy");
+						  /* Alert the copied text */
+						  alert("Copied the text: " + copyText.value);
+						}
+						function myInstagramFunction() {
+						  /* Get the text field */
+						  var copyText = document.getElementById("myInstagramInput");
+						  /* Select the text field */
+						  copyText.select();
+						  /* Copy the text inside the text field */
+						  document.execCommand("copy");
+						  /* Alert the copied text */
+						  alert("Copied the text: " + copyText.value);
+						}
+						function myEmailFunction() {
+						  /* Get the text field */
+						  var copyText = document.getElementById("myEmailInput");
+						  /* Select the text field */
+						  copyText.select();
+						  /* Copy the text inside the text field */
+						  document.execCommand("copy");
+						  /* Alert the copied text */
+						  alert("Copied the text: " + copyText.value);
+						}
+					</script>
+					<div class="row">
+						<div class="col">
+							<input type="text" value="https://github.com/sean-m-higgins" id="myGithubInput">
+							<button onclick="myGithubFunction()" id="contact-button">Github</button>
+						</div>
+						<div class="col">
+							<input type="text" value="https://www.linkedin.com/in/sean-m-higgins20/" id="myLinkedinInput">
+							<button onclick="myLinkedinFunction()" id="contact-button">LinkedIn</button>
+						</div>
+						<div class="col">
+							<input type="text" value="https://www.facebook.com/Seanhigginss22" id="myFacebookInput">
+							<button onclick="myFacebookFunction()" id="contact-button">Facebook</button>
+						</div>
+						<div class="col">
+							<input type="text" value="https://twitter.com/_SEANanigans_" id="myTwitterInput">
+							<button onclick="myTwitterFunction()" id="contact-button">Twitter</button>
+						</div>
+						<div class="col">
+							<input type="text" value="https://www.instagram.com/hazy.lens/" id="myInstagramInput">
+							<button onclick="myInstagramFunction()" id="contact-button">Instagram</button>
+						</div>
+						<div class="col">
+							<input type="text" value="shiggins@luc.edu" id="myEmailInput">
+							<button onclick="myEmailFunction()" id="contact-button">Email</button>
+						</div>
+					</div>
+					<div class="spacer"></div>
+					<div class="row">
+						<div class="col">
+							<div><img src="assets/images/github.png" alt="github" id="contact-img"></div>
+						</div>
+						<div class="col">
+							<div><img src="assets/images/linkedin.png" alt="github" id="contact-img"></div>
+						</div>
+						<div class="col">
+							<div><img src="assets/images/facebook.png" alt="github" id="contact-img"></div>
+						</div>
+						<div class="col">
+							<div><img src="assets/images/twitter.png" alt="github" id="contact-img"></div>
+						</div>
+						<div class="col">
+							<div><img src="assets/images/instagram.png" alt="github" id="contact-img"></div>
+						</div>
+						<div class="col">
+							<div><img src="assets/images/email.png" alt="github" id="contact-img"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="spacer"></div>
+		<div class="spacer"></div>
 		<!-- END OF CONTACT -->
 		<!-- CAROUSEL -->
 		<div id="demo" class="carousel slide" data-ride="carousel">

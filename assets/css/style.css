@@ -246,6 +246,10 @@ body {
   	-webkit-transform: translateZ(0);
         transform: translateZ(0);
   	will-change: transform;
+  	text-indent: 125px;
+  	font-family: SanFranciscoBold;
+  	font-size: 100px;
+
 }
 /* END OF LANDING PAGE */
 
@@ -443,6 +447,47 @@ body {
 }
 /* END OF CAROUSEL */
 /* END OF PORTFOLIO */
+
+/*
+ *
+ *
+ *
+ *
+ * CONTACT ME */
+ #jtron-contact {
+ 	font-size: 30px;
+ 	height: 170px;
+ }
+
+#myGithubInput, #myLinkedinInput, #myFacebookInput, 
+#myTwitterInput, #myInstagramInput, #myEmailInput{
+	opacity: .20;
+	font-size: 2px;
+}
+
+#contact-button {
+	border: none;
+	background: none;
+	color: #C2782E;
+}
+
+#contact-img {
+	height: 50px;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  	filter: grayscale(100%);
+  	alight: top;
+}
+
+#contact-row {
+	margin-left: 20%;
+	height: 0px;
+	background-color: white;
+}
+
+.spacer {
+	height: 30px;
+}
+/* END OF CONTACT ME */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { ... }
