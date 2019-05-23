@@ -391,7 +391,26 @@ body {
  *
  * PORTFOLIO */
 
+ #p-title {
+ 	text-align: left;
+ 	font-size: 25px;
+ }
 
+#p-intro {
+	text-align: left;
+	font-style: italic;
+	font-size: 18px;
+}
+
+#p-body {
+	text-align: justify;
+}
+
+#seperator {
+	font-size: 50px;
+	text-align: center;
+	color: #4EA8D9;
+}
 
 
 .portfolio {
@@ -455,8 +474,8 @@ body {
  *
  * CONTACT ME */
  #jtron-contact {
- 	font-size: 30px;
- 	height: 170px;
+ 	font-size: 25px;
+ 	height: 150px;
  }
 
 #myGithubInput, #myLinkedinInput, #myFacebookInput, 
@@ -475,13 +494,18 @@ body {
 	height: 50px;
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   	filter: grayscale(100%);
-  	alight: top;
 }
 
 #contact-row {
-	margin-left: 20%;
 	height: 0px;
 	background-color: white;
+}
+
+#contact-head {
+	display: inline-block;
+	height: 350px;
+	align: left;
+	margin-left: 50%;
 }
 
 .spacer {
