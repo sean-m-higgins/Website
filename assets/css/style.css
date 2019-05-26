@@ -105,7 +105,7 @@ body {
   	-webkit-transform: translateZ(0);
         transform: translateZ(0);
   	will-change: transform;
-  	text-indent: 125px;
+  	text-indent: 50px;
   	font-family: SanFranciscoBold;
   	font-size: 100px;
 
@@ -241,7 +241,7 @@ body {
 #jtron-skill {
 	font-family: SanFranciscoBold;
  	font-size: 25px;
- 	text-align: right;
+ 	text-align: center;
  }
 /* END OF SKILLS */
 
