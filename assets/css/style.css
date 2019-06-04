@@ -231,7 +231,7 @@ body {
  *
  *
  * SKILLS */
-#jtron {
+#jtrons {
 	font-family: SanFranciscoBold;
  	font-size: 20px;
  	text-align: right;
@@ -297,8 +297,13 @@ body {
  * CONTACT ME */
  #jtron-contact {
  	font-size: 25px;
- 	height: 150px;
+ 	height: 185px;
  }
+
+ #contact-div {
+	display: inline-block;
+	text-align: left;
+}
 
 #myGithubInput, #myLinkedinInput, #myFacebookInput, 
 #myTwitterInput, #myInstagramInput, #myEmailInput{
@@ -307,9 +312,14 @@ body {
 }
 
 #contact-button {
+	display: inline-block;
 	border: none;
 	background: none;
 	color: #C2782E;
+}
+
+.contact-in-div {
+	display: inline-block;
 }
 
 #contact-img {
@@ -333,16 +343,208 @@ body {
 .spacer {
 	height: 30px;
 }
+
 /* END OF CONTACT ME */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { ... }
+/*@media (min-width: 576px) { */
+@media only screen and (max-width: 768px) {
+	.home-inner {
+		background-image: url(../images/skyline.jpeg);
+	  	position: fixed;
+	  	display: table;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+	  	background-size: cover;
+	  	background-position: center center;
+	  	-webkit-transform: translateZ(0);
+	        transform: translateZ(0);
+	  	will-change: transform;
+	  	text-indent: 0px;
+	  	font-family: SanFranciscoBold;
+	  	font-size: 70px;
+	  	text-align: center;
+
+	}
+
+	.navbar-nav {
+		visibility: hidden;
+	}
+
+	.navbar-navc {
+	}
+
+	.nav-item {
+		display: inline-block;
+		text-decoration: none;
+		font-size: 20px;
+		color: white;
+		padding: 0 5px 10px;
+	}
+
+	.nav-spacer {
+		height: 20px;
+	}
+
+	.p-4 {
+		margin-left: 0px;
+	}
+
+	.navbar-brand {
+		display: block;
+		margin-left: 20px; 
+		font-size: 30px;
+		/* opacity is last value --> color: rgba(77, 0, 255, 0.5); */
+	}
+
+	/*
+	 *
+	 *
+	 *
+	 *
+	 * DRAGGABLES */
+	#drag-1 {
+		display: inline-block;
+		text-align: center;
+	  	width: 35%;
+	  	margin-left: 12%;
+	  	background-color: #2B8EFF;
+	  	color: white;
+	  	border-radius: 0.75em;
+	  	padding: 1%;
+	  	margin-bottom: 10px;
+	  	touch-action: none;
+	  	user-select: none;
+	  	-webkit-transform: translate(0px, 0px);
+	          	transform: translate(0px, 0px);
+	}
+
+	#drag-2 {
+		display: inline-block;
+		text-align: center;
+		margin-left: 1%;
+		width: 35%;
+	  	background-color: #FECC12;
+	  	color: white;
+	  	border-radius: 0.75em;
+	  	padding: 1%;
+	  	margin-bottom: 10px;
+	  	touch-action: none;
+	  	user-select: none;
+	  	-webkit-transform: translate(0px, 0px);
+	          	transform: translate(0px, 0px);
+	}
+
+	#drag-3 {
+		display: inline-block;
+		text-align: center;
+		margin-left: 1%;
+		width: 31%;
+	  	background-color: #3BB63E;
+	  	color: white;
+	  	border-radius: 0.75em;
+	  	margin-bottom: 10px;
+	  	padding: 1%;
+	  	touch-action: none;
+	  	user-select: none;
+	  	-webkit-transform: translate(0px, 0px);
+	          	transform: translate(0px, 0px);
+	}
+
+	#drag-4 {
+		display: inline-block;
+		text-align: center;
+		margin-left: 1%;
+		width: 31%;
+	  	background-color: #E14A3A;
+	  	color: white;
+	  	border-radius: 0.75em;
+	  	margin-bottom: 10px;
+	  	padding: 1%;
+	  	touch-action: none;
+	  	user-select: none;
+	  	-webkit-transform: translate(0px, 0px);
+	          	transform: translate(0px, 0px);
+	}
+
+	#drag-5 {
+		display: inline-block;
+		text-align: center;
+		margin-left: 1%;
+		width: 31%;
+	  	background-color: #49B0BB;
+	  	color: white;
+	  	border-radius: 0.75em;
+	  	margin-bottom: 10px;
+	  	padding: 1%;
+	  	touch-action: none;
+	  	user-select: none;
+	  	-webkit-transform: translate(0px, 0px);
+	          	transform: translate(0px, 0px);
+	}
+
+	#box-tag {
+		color: white;
+		font-size: 20px;
+	}
+
+	#box1, #box2, #box3, #box4, #box5 {
+		text-align: center;
+	}
+	/* END OF DRAGGABLES */
+
+	#titles {
+		text-align: center;
+	}
+
+	#jtrona, #jtrons {
+		margin-left: auto;
+		text-align: justify;
+	}
+
+	#jtronp {
+		margin-left: auto;
+		text-align: center;
+	}
+
+	#jtron-contact {
+		height: 200px;
+		margin-left: 50%;
+		text-align: right;
+	}
+
+	#contact-head {
+		margin-top: 100px;
+	}
+
+	#contact-images {
+		visibility: hidden;
+	}
+
+	 #contact-div {
+		display: inline-block;
+		text-align: right;
+	}
+}
+
+
+@media only screen and (max-width: 1000px) {
+	.navbar-nav {
+		visibility: hidden;
+	}
+}
+
+
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) { ...
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) { ...
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { ... }

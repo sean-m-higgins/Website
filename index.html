@@ -18,13 +18,60 @@
 		<!-- HOME -->
 		<div id="home">
 			<!-- NAV BAR -->
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+			<div class="pos-f-t fixed-bottom">
+			  <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+			    <div class="bg-dark p-4">
+			      <ul class="navbar-navc" id="nav-list">
+				      <li class="nav-item active"><button type="submit" class="btn btn-primary"><a class="nav-item" href="#home">Home <span class="sr-only">(current)</span></a></button>
+				      </li>
+				      <li class="nav-item">
+				        <button type="submit" class="btn btn-warning"><a class="nav-item" href="#about">About</a></button>
+				      </li>
+				      <li class="nav-item">
+				        <button type="submit" class="btn btn-success"><a class="nav-item" href="#skills">Skills</a></button>
+				      </li>
+				      <li class="nav-item">
+				        <button type="submit" class="btn btn-danger"><a class="nav-item" href="#portfolio">Portfolio</a></button>
+				      </li>
+				      <li class="nav-item">
+				        <button type="submit" class="btn btn-info"><a class="nav-item" href="#contact">Contact</a></button>
+				      </li>
+				    </ul>
+				    <div class="nav-spacer"></div>
+			    </div>
+			  </div>
+			  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+			  	<a class="navbar-brand" href="#">Sean Higgins</a>
+			  	<ul class="navbar-nav navbar-right">
+			      <li class="nav-item active"><button type="submit" class="btn btn-primary"><a class="nav-item" href="#home">Home <span class="sr-only">(current)</span></a></button>
+			      </li>
+			      <li class="nav-item">
+			        <button type="submit" class="btn btn-warning"><a class="nav-item" href="#about">About</a></button>
+			      </li>
+			      <li class="nav-item">
+			        <button type="submit" class="btn btn-success"><a class="nav-item" href="#skills">Skills</a></button>
+			      </li>
+			      <li class="nav-item">
+			        <button type="submit" class="btn btn-danger"><a class="nav-item" href="#portfolio">Portfolio</a></button>
+			      </li>
+			      <li class="nav-item">
+			        <button type="submit" class="btn btn-info"><a class="nav-item" href="#contact">Contact</a></button>
+			      </li>
+			    </ul>
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			  </nav>
+			</div>
+
+
+<!-- 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
 			  <a class="navbar-brand" href="#">Sean Higgins</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarNav">
-			    <ul class="navbar-nav">
+			    <ul class="navbar-nav navbar-right">
 			      <li class="nav-item active"><button type="submit" class="btn btn-primary"><a class="nav-item" href="#home">Home <span class="sr-only">(current)</span></a></button>
 			      </li>
 			      <li class="nav-item">
@@ -41,7 +88,7 @@
 			      </li>
 			    </ul>
 			  </div>
-			</nav>
+			</nav> -->
 			<!-- END OF NAV BAR -->
 
 			<!-- LANDING PAGE -->
@@ -135,7 +182,7 @@
 		<div id="about">
 			<h1 id="titles">About Me</h1>
 			<div class="container-fluid">
-				<div class="jumbotron">
+				<div class="jumbotron" id="jtrona">
 					Hi! I am Sean Higgins. Drag and explore the boxes above to learn more about me. Welcome to my website and thanks for visiting!
 				</div>
 			</div>
@@ -146,7 +193,7 @@
 		<div id="skills">
 			<h1 id="titles">Skills</h1>
 			<div class="container-fluid">
-				<div class="jumbotron" id="jtron">
+				<div class="jumbotron" id="jtrons">
 					<div class="container">
 					  	<div class="row">
 					    	<div class="col" id="jtron-skill">
@@ -215,7 +262,7 @@
 		<!-- PORTFOLIO -->
 		<div id="portfolio">
 			<h1 id="titles">Portfolio</h1>
-			<div class="jumbotron">
+			<div class="jumbotron" id="jtronp">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -364,34 +411,35 @@
 						  alert("Copied the text: " + copyText.value);
 						}
 					</script>
-					<div class="row">
-						<div class="col">
+					<div class="spacer"></div>
+					<div id="contact-div">
+						<div class="contact-in-div">
 							<input type="text" value="https://github.com/sean-m-higgins" id="myGithubInput">
 							<button onclick="myGithubFunction()" id="contact-button">Github</button>
 						</div>
-						<div class="col">
+						<div class="contact-in-div">
 							<input type="text" value="https://www.linkedin.com/in/sean-m-higgins20/" id="myLinkedinInput">
 							<button onclick="myLinkedinFunction()" id="contact-button">LinkedIn</button>
 						</div>
-						<div class="col">
+						<div class="contact-in-div">
 							<input type="text" value="https://www.facebook.com/Seanhigginss22" id="myFacebookInput">
 							<button onclick="myFacebookFunction()" id="contact-button">Facebook</button>
 						</div>
-						<div class="col">
+						<div class="contact-in-div">
 							<input type="text" value="https://twitter.com/_SEANanigans_" id="myTwitterInput">
 							<button onclick="myTwitterFunction()" id="contact-button">Twitter</button>
 						</div>
-						<div class="col">
+						<div class="contact-in-div">
 							<input type="text" value="https://www.instagram.com/hazy.lens/" id="myInstagramInput">
 							<button onclick="myInstagramFunction()" id="contact-button">Instagram</button>
 						</div>
-						<div class="col">
+						<div class="contact-in-div">
 							<input type="text" value="shiggins@luc.edu" id="myEmailInput">
 							<button onclick="myEmailFunction()" id="contact-button">Email</button>
 						</div>
 					</div>
 					<div class="spacer"></div>
-					<div class="row">
+					<div class="row" id="contact-images">
 						<div class="col">
 							<div><img src="assets/images/github.png" alt="github" id="contact-img"></div>
 						</div>
