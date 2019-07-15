@@ -232,14 +232,11 @@ body {
  *
  * SKILLS */
 #jtrons {
-	font-family: SanFranciscoBold;
  	font-size: 20px;
  	text-align: right;
- 	opacity: 0.5;
 }
 
 #jtron-skill {
-	font-family: SanFranciscoBold;
  	font-size: 25px;
  	text-align: center;
  }
@@ -251,8 +248,7 @@ body {
  *
  *
  * PORTFOLIO */
-
- #p-title {
+#p-title {
  	text-align: left;
  	font-size: 25px;
  }
@@ -272,21 +268,6 @@ body {
 	text-align: center;
 	color: #4EA8D9;
 }
-
-/* CAROUSEL */
-.carousel-img {
-	height: 500px;
-	width: 100%;
-}
-
-.carousel-caption {
-	margin-bottom: 18px;
-}
-
-.slide {
-
-}
-/* END OF CAROUSEL */
 /* END OF PORTFOLIO */
 
 /*
@@ -297,7 +278,7 @@ body {
  * CONTACT ME */
  #jtron-contact {
  	font-size: 25px;
- 	height: 185px;
+ 	height: 100px;
  }
 
  #contact-div {
@@ -343,8 +324,23 @@ body {
 .spacer {
 	height: 30px;
 }
-
 /* END OF CONTACT ME */
+
+/*
+ *
+ *
+ *
+ * CAROUSEL */
+.carousel-img {
+	height: 500px;
+	width: 100%;
+}
+
+.carousel-caption {
+	margin-bottom: 18px;
+}
+/* END OF CAROUSEL */
+
 
 /* Small devices (landscape phones, 576px and up) */
 /*@media (min-width: 576px) { */

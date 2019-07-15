@@ -1,0 +1,46 @@
+{
+  "_from": "@interactjs/interact@1.4.1",
+  "_id": "@interactjs/interact@1.4.1",
+  "_inBundle": false,
+  "_integrity": "sha512-NHkleaGKmTtpGLIgYGH0U/Za8Ga3kyZg3VRNHUUGQJMNqxXqz6EoygT3U7hRtWDnCnV5zvC1aNaTej/K2XGHVA==",
+  "_location": "/@interactjs/interact",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@interactjs/interact@1.4.1",
+    "name": "@interactjs/interact",
+    "escapedName": "@interactjs%2finteract",
+    "scope": "@interactjs",
+    "rawSpec": "1.4.1",
+    "saveSpec": null,
+    "fetchSpec": "1.4.1"
+  },
+  "_requiredBy": [
+    "/@interactjs/types"
+  ],
+  "_resolved": "https://registry.npmjs.org/@interactjs/interact/-/interact-1.4.1.tgz",
+  "_shasum": "98d2a6e4fed416ab6901401f0d8c7a23820c97c2",
+  "_spec": "@interactjs/interact@1.4.1",
+  "_where": "/Users/SeanHiggins/node_modules/@interactjs/types",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "<h2> This package is an internal part of <a href=\"https://www.npmjs.com/package/interactjs\">interactjs</a> and is not meant to be used independently as each update may introduce breaking changes </h2>",
+  "name": "@interactjs/interact",
+  "peerDependencies": {
+    "@interactjs/actions": "1.4.1",
+    "@interactjs/auto-scroll": "1.4.1",
+    "@interactjs/auto-start": "1.4.1",
+    "@interactjs/core": "1.4.1",
+    "@interactjs/dev-tools": "1.4.1",
+    "@interactjs/inertia": "1.4.1",
+    "@interactjs/modifiers": "1.4.1",
+    "@interactjs/pointer-events": "1.4.1",
+    "@interactjs/reflow": "1.4.1",
+    "@interactjs/utils": "1.4.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.4.1"
+}

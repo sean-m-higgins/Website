@@ -1,0 +1,83 @@
+{
+  "_dev": {
+    "entries": "./index.ts",
+    "standalone": "interact",
+    "destDir": "./dist",
+    "name": "interact"
+  },
+  "_from": "interactjs",
+  "_id": "interactjs@1.4.1",
+  "_inBundle": false,
+  "_integrity": "sha512-e79Ykta+aHwjw4CMTA1TdZHV51MWcZt1yZ9YskakfEBzO24HDHK4LmujTS06pA6ZH5DcbAVm/g/Y6MqnCouX/g==",
+  "_location": "/interactjs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "interactjs",
+    "name": "interactjs",
+    "escapedName": "interactjs",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/interactjs/-/interactjs-1.4.1.tgz",
+  "_shasum": "18adec85a2b502a07652971cae5b56b1737b5cf6",
+  "_spec": "interactjs",
+  "_where": "/Users/SeanHiggins",
+  "authors": [
+    {
+      "name": "Taye Adeyemi",
+      "email": "dev@taye.me",
+      "url": "https://taye.me"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/taye/interact.js/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@interactjs/types": "1.4.1"
+  },
+  "deprecated": false,
+  "description": "Drag and drop, resizing and multi-touch gestures with inertia and snapping for modern browsers (and also IE9+)",
+  "devDependencies": {
+    "@interactjs/interact": "1.4.1",
+    "@interactjs/modifiers": "1.4.1",
+    "@interactjs/utils": "1.4.1"
+  },
+  "homepage": "https://interactjs.io",
+  "jsdelivr": "dist/interact.min.js",
+  "jspm": {
+    "main": "index"
+  },
+  "keywords": [
+    "interact.js",
+    "draggable",
+    "droppable",
+    "drag",
+    "drop",
+    "drag and drop",
+    "resize",
+    "touch",
+    "multi-touch",
+    "gesture",
+    "snap",
+    "inertia",
+    "grid",
+    "autoscroll",
+    "SVG"
+  ],
+  "license": "MIT",
+  "main": "dist/interact.js",
+  "name": "interactjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taye/interact.js.git"
+  },
+  "version": "1.4.1"
+}
