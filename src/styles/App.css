@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text|Telex&display=swap");
+
+body, html {
+  background-color: #EAE0CC;
+  overflow-x: hidden;
+  font-family: 'DM Serif Text', sans-serif;
+  /* overflow-y: hidden; */
+}
+
+.App {
+  
+}
+
+.spacer {
+	padding-top: 100px;
+}
