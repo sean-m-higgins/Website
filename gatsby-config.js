@@ -10,6 +10,7 @@ module.exports = {
       author: 'Sean Higgins',
       description: 'personal website'
   },
+  pathPrefix: '/Website',
   plugins: [
     'gatsby-plugin-sharp', 
     'gatsby-transformer-sharp',

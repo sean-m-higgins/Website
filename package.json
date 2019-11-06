@@ -1,18 +1,21 @@
 {
-  "name": "web",
+  "name": "Website",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal Website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "author": "Sean Higgins",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  },
   "dependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
@@ -41,5 +44,12 @@
     "react-helmet": "^5.2.1",
     "sass": "^1.23.3",
     "typescript": "^3.6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sean-m-higgins/Website"
+  },
+  "bugs": {
+    "url": "https://github.com/sean-m-higgins/Website/issues"
   }
 }
